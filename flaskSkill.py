@@ -41,7 +41,7 @@ def Blinds_Intent(status, room):
 
 @ask.intent('AMAZON.HelpIntent')
 def help():
-    speech_text = 'EAT SHIT'
+    speech_text = 'You can say "Alexa, tell raspberry pi to open the blinds" to open the blinds.'
     return question(speech_text).reprompt(speech_text).simple_card('HelloWorld', speech_text)
 
 @ask.session_ended
